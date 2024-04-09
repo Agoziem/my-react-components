@@ -10,9 +10,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6;
+  }
+  .btn-primary {
+    @apply px-3 py-3 text-sm bg-blue-600 text-white rounded-xl m-4 shadow-sm hover:bg-blue-950 drop-shadow-sm cursor-pointer;
+  }
+  .btn-primary-soft{
+    @apply px-3 py-3 text-sm bg-blue-100 text-blue-900 font-bold rounded-lg m-4 shadow-sm hover:bg-blue-600 hover:text-white drop-shadow-sm;
+  }
+}
+
+
