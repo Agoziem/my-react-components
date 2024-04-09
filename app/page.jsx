@@ -7,8 +7,10 @@ import Select from '@/components/Form/Select'
 import {MultiSelectDropdown} from '@/components/Form/MultiSelect'
 import Carousel from '@/components/Carousel/Carousel'
 import Sidebar from '@/components/Sidemenu/Sidebar'
+import Windowdimension from '@/components/Practicehooks/windowdimension'
 
 const page = () => {
+
   return (
     <div >
       <div className='flex flex-row'>
@@ -38,8 +40,13 @@ const page = () => {
       <div>
         <Carousel />
       </div>
-      <div>
-        <Sidebar />
+      <div className='flex space-x-5'>
+        <div>
+          <Sidebar />
+        </div>
+        <div>
+          <Windowdimension />
+        </div>
       </div>
     </div>
   )

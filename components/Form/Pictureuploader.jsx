@@ -4,10 +4,12 @@ import Image from 'next/image';
 import { MdCloudUpload , MdDelete} from "react-icons/md";
 import { AiFillFileImage } from "react-icons/ai";
 
+
 const Pictureuploader = () => {
     const [fileName, setFileName] = useState("No Selected file")
     const [image, setImage] = useState(null)
     const fileInput = useRef(null)
+
   return (
     <div className='w-full h-full flex flex-col justify-center items-center mt-8'>
 
@@ -42,6 +44,8 @@ const Pictureuploader = () => {
                 setImage(null)
             }}/>
         </div>
+
+        
 
     </div>
   )
